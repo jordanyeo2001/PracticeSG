@@ -5,6 +5,7 @@
 
 # PracticeSG
 
+[Try the live browser demo](https://practicesg.netlify.app/)
 PracticeSG is a lightweight, browser-based interactive simulation web application designed to help users—such as seniors, newcomers, and everyday citizens—practice and build digital confidence with essential Singapore digital services and online safety in a safe, risk-free environment. 
 
 ## Features
