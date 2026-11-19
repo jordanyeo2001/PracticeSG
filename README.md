@@ -1,3 +1,8 @@
+## Contributors
+1. Jordan Yeo
+2. Phua Cheng Ann
+3. Wee Peng Fei
+
 # PracticeSG
 
 PracticeSG is a lightweight, browser-based interactive simulation web application designed to help users—such as seniors, newcomers, and everyday citizens—practice and build digital confidence with essential Singapore digital services and online safety in a safe, risk-free environment. 
@@ -68,3 +73,4 @@ Then visit `http://localhost:8000` (or the port shown in your terminal) in your 
 1. Add new simulation modules inside `js/simulations/`.
 2. Register the new module in `js/app.js` and `js/state.js`.
 3. Add corresponding UI text and localized strings in `js/translations.js`.
+
