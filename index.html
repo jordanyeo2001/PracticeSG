@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PracticeSG - Safe Digital Literacy for Seniors in Singapore</title>
+  <meta name="description" content="Practise common digital tasks in Singapore safely — PayNow, Singpass, Polyclinic appointments, QR scanning, grocery shopping, and scam recognition.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- App Header & Accessibility Toolbar -->
+  <header class="app-header">
+    <div class="header-container">
+      <button class="logo-area" onclick="app.showHome()">
+        <span class="logo-icon">🇸🇬</span>
+        <span>PracticeSG</span>
+      </button>
+
+      <div class="accessibility-controls">
+        <button id="headerHomeBtn" class="control-btn active" onclick="app.showHome()">
+          🏠 Home
+        </button>
+
+        <button id="headerProgressBtn" class="control-btn" onclick="app.showProgress()">
+          📊 My Progress
+        </button>
+
+        <button id="fontScaleBtn" class="control-btn" aria-label="Change text size">
+          Text: Normal
+        </button>
+
+        <button id="contrastToggleBtn" class="control-btn" aria-label="Toggle High Contrast">
+          🌓 High Contrast
+        </button>
+
+        <select id="langSelect" class="lang-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="zh">简体中文</option>
+          <option value="ms">Bahasa Melayu</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+
+        <button id="headerVoiceBtn" class="voice-assist-btn" style="padding: 0.4rem 0.9rem; font-size: 1rem; min-height: 48px;">
+          🔊 Read Aloud
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Workspace -->
+  <main id="appMain" class="main-content">
+    <!-- Dynamic Component Views Injected Here -->
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 1.5rem; color: var(--text-muted); font-size: 1rem; border-top: 1px solid var(--card-border); margin-top: auto;">
+    <p><strong>PracticeSG</strong> — Social Innovation Prototype for Digital Inclusion in Singapore 🇸🇬</p>
+    <p style="font-size: 0.9rem; margin-top: 0.25rem;">🔒 Safe Demo Environment: No real money, personal data, or bank accounts involved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/confidenceModal.js"></script>
+
+  <!-- Simulation Modules -->
+  <script src="js/simulations/paynow.js"></script>
+  <script src="js/simulations/singpass.js"></script>
+  <script src="js/simulations/clinic.js"></script>
+  <script src="js/simulations/qrscanner.js"></script>
+  <script src="js/simulations/shopping.js"></script>
+  <script src="js/simulations/scamquiz.js"></script>
+  <script src="js/progress.js"></script>
+
+  <!-- Central Controller -->
+  <script src="js/app.js"></script>
+</body>
+</html>
